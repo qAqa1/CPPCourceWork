@@ -1,0 +1,230 @@
+  Информационная_система_для_оператора_связи.AddAndChangeServiceForm.resources - Embedded, ContainedInManifestFile, 
+  Информационная_система_для_оператора_связи.AddAndChangeTariffForm.resources - Embedded, ContainedInManifestFile, 
+  Информационная_система_для_оператора_связи.AdminForm.resources - Embedded, ContainedInManifestFile, 
+  Информационная_система_для_оператора_связи.CreateЕmployeeForm.resources - Embedded, ContainedInManifestFile, 
+  Информационная_система_для_оператора_связи.DeleteMyAccountForm.resources - Embedded, ContainedInManifestFile, 
+  Информационная_система_для_оператора_связи.FeedbackForm.resources - Embedded, ContainedInManifestFile, 
+  Информационная_система_для_оператора_связи.Form1.resources - Embedded, ContainedInManifestFile, 
+  Информационная_система_для_оператора_связи.OperatorForm.resources - Embedded, ContainedInManifestFile, 
+  Информационная_система_для_оператора_связи.UserForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly Информационная система для оператора связи, Version=1.0.*, Culture=Инвариантный язык (Инвариантная страна): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class CppCLR_WinformsProjekt.Connection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String CONNECTION_STRING : Public, Static
+    System.Data.OleDb.OleDbConnection myConnect : Public, Static
+  Methods:
+    Start(): PrivateScope, Public, Static, HideBySig
+    Close(): PrivateScope, Public, Static, HideBySig
+Class CppCLR_WinformsProjekt.Email: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    SendMail(String, String, String): PrivateScope, Public, Static, HideBySig
+Class CppCLR_WinformsProjekt.GlobalSettings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 minPasswordLen : Public, Static
+    Int32 MAXLoginLen : Public, Static
+    Int32 minNumberLen : Public, Static
+    Int32 MAXNumberLen : Public, Static
+    Int32 MAXNameLen : Public, Static
+    Int32 MAXSurnameLen : Public, Static
+    Int32 PassportIDLen : Public, Static
+    Int32 tariffIdLen : Public, Static
+    Int32 tariffTitleLen : Public, Static
+    Int32 tariffDescriptionLen : Public, Static
+    Int32 RoleInformationLen : Public, Static
+    Int32 CardNumberLen : Public, Static
+    Int32 SafeCodeLen : Public, Static
+    Int32 servicesIdLen : Public, Static
+    Int32 servicesTitleLen : Public, Static
+    Int32 servicesPriceLen : Public, Static
+    System.String defaultPassword : Public, Static
+    System.String borderBetweenFields : Public, Static
+    Char borderCharBetweenFields : Public, Static
+    System.String borderBetweenColumns : Public, Static
+    Char borderCharBetweenColumns : Public, Static
+    Int32 mailIdLen : Public, Static
+    Int32 mailSenderLen : Public, Static
+    Int32 mailSubjectLen : Public, Static
+    Int32 mailDepartureTime : Public, Static
+  Methods:
+    StringWithCertainSize(Int32): PrivateScope, Public, Static, HideBySig
+    StringWithCertainSize(String, Int32): PrivateScope, Public, Static, HideBySig
+    FormClose(): PrivateScope, Public, Static, HideBySig
+Class CppCLR_WinformsProjekt.GlobalSettings+VoidDelegateWithoutArguments: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class CppCLR_WinformsProjekt.EMailBox: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Windows.Forms.Label, System.Windows.Forms.ListBox): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label header : Public
+    System.Windows.Forms.ListBox table : Public
+  Methods:
+    Print(): PrivateScope, Public, HideBySig
+    MarkAsRead(String): PrivateScope, Public, Static, HideBySig
+    SelectedLetterMarkAsRead(): PrivateScope, Public, HideBySig
+    DeleteLetter(String): PrivateScope, Public, Static, HideBySig
+    SelectedLetterDelete(): PrivateScope, Public, HideBySig
+    ReadLetter(String): PrivateScope, Public, Static, HideBySig
+    SelectedLetterRead(): PrivateScope, Public, HideBySig
+    PrintOnly(LetterStatus): PrivateScope, Public, HideBySig
+Struct CppCLR_WinformsProjekt.EMailBox+LetterStatus: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    LetterStatus read = 0 : Public, Static, Literal, HasDefault
+    LetterStatus notRead = 1 : Public, Static, Literal, HasDefault
+Class CppCLR_WinformsProjekt.SQL_helper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Md5(String): PrivateScope, Public, Static, HideBySig
+    role_name(Int32): PrivateScope, Public, Static, HideBySig
+    Ban(String): PrivateScope, Public, Static, HideBySig
+    UnBan(String): PrivateScope, Public, Static, HideBySig
+    MakeЕmployee(String): PrivateScope, Public, Static, HideBySig
+    MakeUser(String): PrivateScope, Public, Static, HideBySig
+    ResetPassword(String): PrivateScope, Public, Static, HideBySig
+    ClientNameAndSurname(Int32): PrivateScope, Public, Static, HideBySig
+    ClientTariffTitle(Int32, Boolean* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    TarrifOld(Int32): PrivateScope, Public, Static, HideBySig
+    TarrifCurrent(Int32): PrivateScope, Public, Static, HideBySig
+    TarrifDetailedInformation(Int32): PrivateScope, Public, Static, HideBySig
+    AkkauntInformationForAdmin(String): PrivateScope, Public, Static, HideBySig
+    AkkauntInformationForЕmployee(String): PrivateScope, Public, Static, HideBySig
+    DeleteUser(Int32): PrivateScope, Public, Static, HideBySig
+    DeleteUser(String): PrivateScope, Public, Static, HideBySig
+Class CppCLR_WinformsProjekt.AdditionalServices: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Windows.Forms.Label, System.Windows.Forms.ListBox): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Label header : Public
+    System.Windows.Forms.ListBox table : Public
+  Methods:
+    Print(): PrivateScope, Public, HideBySig
+    PrintWithoutActive(ServiceStatus): PrivateScope, Public, HideBySig
+    SetArchive(Int32, ServiceStatus): PrivateScope, Public, Static, HideBySig
+    СhangeStatusSelectedService(ServiceStatus): PrivateScope, Public, HideBySig
+    DeleteService(Int32): PrivateScope, Public, Static, HideBySig
+    DeleteSelectedService(): PrivateScope, Public, HideBySig
+    ServiceDetailedInformation(Int32): PrivateScope, Public, Static, HideBySig
+    SelectedServiceDescription(): PrivateScope, Public, HideBySig
+    GetServicesData(TextBox, TextBox, TextBox, TextBox): PrivateScope, Public, Static, HideBySig
+    OutServicesData(String, String* IsImplicitlyDereferenced, String* IsImplicitlyDereferenced, String* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    ServiceExist(String): PrivateScope, Public, Static, HideBySig
+    ChangeService(String, String, String, String): PrivateScope, Public, Static, HideBySig
+    AddService(String, String, String, String): PrivateScope, Public, Static, HideBySig
+Struct CppCLR_WinformsProjekt.AdditionalServices+ServiceStatus: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ServiceStatus ative = 0 : Public, Static, Literal, HasDefault
+    ServiceStatus old = 1 : Public, Static, Literal, HasDefault
+Class CppCLR_WinformsProjekt.AdditionalServicesForUser: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, System.Windows.Forms.Label, System.Windows.Forms.ListBox, System.Windows.Forms.Label, System.Windows.Forms.ListBox, VoidDelegateWithoutArguments): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 ClientId : Public
+    System.Windows.Forms.Label header : Public
+    System.Windows.Forms.ListBox table : Public
+    System.Windows.Forms.Label headerPurchases : Public
+    System.Windows.Forms.ListBox purchases : Public
+    VoidDelegateWithoutArguments printBalance : Public
+  Methods:
+    Start(): PrivateScope, Public, HideBySig
+    Update(): PrivateScope, Public, HideBySig
+    Print(): PrivateScope, Public, HideBySig
+    SelectedServiceDescription(): PrivateScope, Public, HideBySig
+    OutServicesData(String, String* IsImplicitlyDereferenced, String* IsImplicitlyDereferenced): PrivateScope, Public, Static, HideBySig
+    GetBalance(): PrivateScope, Public, HideBySig
+    Payment(Int32): PrivateScope, Public, HideBySig
+    AddPurchased(String, String): PrivateScope, Public, HideBySig
+    PrintPurchasedServices(): PrivateScope, Public, HideBySig
+    BuyService(): PrivateScope, Public, HideBySig
+Class CppCLR_WinformsProjekt.AddAndChangeTariffForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, VoidDelegateWithoutArguments): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    VoidDelegateWithoutArguments updateParant : Public
+    System.Windows.Forms.Form parentForm : Public
+Class CppCLR_WinformsProjekt.CreateЕmployeeForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, VoidDelegateWithoutArguments): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    VoidDelegateWithoutArguments updateParant : Public
+    System.Windows.Forms.Form parentForm : Public
+Class CppCLR_WinformsProjekt.AddAndChangeServiceForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, CppCLR_WinformsProjekt.AdditionalServices): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    CppCLR_WinformsProjekt.AdditionalServices parentAdditionalServices : Public
+    System.Windows.Forms.Form parentForm : Public
+Class CppCLR_WinformsProjekt.AdminForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    CppCLR_WinformsProjekt.AdditionalServices additionalServices : Public
+    CppCLR_WinformsProjekt.EMailBox adminMail : Public
+    System.Windows.Forms.Form parentForm : Public
+    VoidDelegateWithoutArguments updateAfterTariffsChanges : Public
+    System.Windows.Forms.ListBox listBoxAdditionalServices : Public
+    System.Windows.Forms.Label labelAdditionalServices : Public
+    VoidDelegateWithoutArguments updateAfterAkkauntsChanges : Public
+  Methods:
+    button9_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    button5_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+Class CppCLR_WinformsProjekt.OperatorForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    CppCLR_WinformsProjekt.AdditionalServices additionalServicesForЕmployee : Public
+    System.Windows.Forms.Label labelAdditionalServices : Public
+    System.Windows.Forms.ListBox listBoxAdditionalServices : Public
+    System.Windows.Forms.Form parentForm : Public
+Class CppCLR_WinformsProjekt.FeedbackForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form parentForm : Public
+    Int32 myClientId : Public
+    System.String myNameAndSurname : Public
+Class CppCLR_WinformsProjekt.DeleteMyAccountForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.Windows.Forms.Form parentForm : Public
+    Int32 myClientId : Public
+Class CppCLR_WinformsProjekt.UserForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Windows.Forms.Form, Int32, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    CppCLR_WinformsProjekt.AdditionalServicesForUser additionalServicesForUser : Public
+    VoidDelegateWithoutArguments updateAfterPay : Public
+    System.Windows.Forms.Form parentForm : Public
+    Int32 myClientId : Public
+    System.Windows.Forms.Label labelAdditionalServices : Public
+    System.Windows.Forms.ListBox listBoxAdditionalServices : Public
+    System.String myNameAndSurname : Public
+  Methods:
+    Update_Balance(): PrivateScope, Public, HideBySig
+    Update_UserSelectedTariffInformation(): PrivateScope, Public, HideBySig
+    Update_TariffSelection(): PrivateScope, Public, HideBySig
+Class CppCLR_WinformsProjekt.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
